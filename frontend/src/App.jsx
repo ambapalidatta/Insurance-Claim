@@ -21,6 +21,10 @@ import DocumentUpload from "./pages/DocumentUpload";
 import VerifyClaims from "./pages/VerifyClaims";
 import BiometricVerification from "./pages/BiometricVerification";
 import InsuranceCertificate from "./pages/InsuranceCertificate";
+import UploadDocuments from "./pages/UploadDocuments";
+import SubmitClaim from "./pages/SubmitClaim";
+import Certificate from "./pages/Certificate";
+import InsurancePurchase from "./pages/InsurancePurchase";
 
 function App() {
   return (
@@ -120,6 +124,14 @@ function App() {
               element={
                 <PrivateRoute>
                   <InsuranceCertificate />
+                </PrivateRoute>
+              }
+            />
+            <Route
+              path="/insurance/purchase"
+              element={
+                <PrivateRoute>
+                  <InsurancePurchase />
                 </PrivateRoute>
               }
             />
